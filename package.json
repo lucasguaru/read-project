@@ -1,0 +1,24 @@
+{
+  "name": "read-project",
+  "version": "1.0.0",
+  "description": "Read files and structure from projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasguaru/read-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucasguaru/read-project/issues"
+  },
+  "homepage": "https://github.com/lucasguaru/read-project#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "xml-js": "^1.6.11"
+  }
+}
