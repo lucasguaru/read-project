@@ -6,8 +6,12 @@ const port = 3000
 var ignoreList = ['.classpath', '.project', 'exchange-docs', 'target'];
 const basePath = 'C:\\workspace\\studio-workspace\\logger-performance\\src\\main\\mule';
 
-app.get('/', (req, res) => {
-    let result = readContent.readFiles(basePath, { ignoreList });
+
+app.use(express.json());
+
+app.post('/get-info', (req, res) => {
+    let body = req.body;
+    let result = readContent.readFiles(body.basePath, { ignoreList });
     res.json(result)
 })
 
